@@ -1,0 +1,166 @@
+html, body{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: 'pixel'; /*a name to be used later*/
+  src: url('../src/Minecraft.ttf'); /*URL to font*/
+}
+
+/*--------------------------BODY----------------------*/
+#container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: pixel;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+#holder{
+  display: block;
+  position: absolute;
+  margin: auto;
+  width: 854px;
+  height: 480px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ddd;
+}
+#canvas{
+  display: block;
+  position: absolute;
+  outline: 1px solid black;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+#intro{
+  position: absolute;
+  width: 200px;
+  height: 75px;
+  padding-top: 10px;
+  padding-left: 10px;
+ 
+  left: 320px;
+
+  top: 180px;
+}
+#intro p{
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+#intro input{
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+#intro button{
+  widtH: 100px;
+  margin-lefT: 45px;
+}
+
+
+#story{
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 650px;
+  min-height: 250px;
+  max-height: 400px;
+  overflow: hidden;
+  overflow-y: auto;
+  left: 20px;
+  outline: 1px solid black;
+  font-size: 18px;
+  padding: 10px;
+  
+}
+p{
+  padding: 0;
+  margin: 0;
+}
+ul{
+  list-style: none;
+}
+
+li{
+  cursor: pointer;
+}
+
+/*---------------------INVENTORY -----------------------*/
+#inventory{
+  display: block;
+  position: absolute;
+  width: 150px;
+  height: 455px;
+  right: 10px;
+  top: 10px;
+  outline: 1px solid black;
+}
+
+h1{
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 300;
+  padding: 0;
+  margin: 5px 0px 5px 0px;
+  
+}
+hr{
+  padding: 0;
+  margin: 0;
+}
+#items {
+  text-align: left;
+  margin: 5px 0px 0px 5px;
+  padding: 0;
+ 
+}
+#items li{
+  padding: 2px;
+  width: 80px;
+}
+h5{
+  font-weight: 200;
+  font-size: 16px;
+  padding: 0px;
+  margin: 0px 0px 10px 0px;
+}
+
+
+
+#options{
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 650px;
+  height: 150px;
+  left: 20px;
+  font-size: 18px;
+  padding-top: 5px;
+  
+
+}
+#optionsList{
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+#optionsList li {
+  text-align: center;
+  margin-left: 50px;
+  float: left;
+  width: 40%; 
+  padding-top: 5px;
+  
+}
+
+#optionsList li:hover {
+  background: #bbb;
+}
