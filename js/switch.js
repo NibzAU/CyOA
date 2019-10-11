@@ -20,13 +20,22 @@ function updateGame(option){
     case "begin":
             
       if (option == 'option1'){
-        player.location = "nostory"
-        player.items.push("Pills");
+        player.location = "firstSteps"
+        if (!player.items.includes("Pills")){
+          player.items.push("Pills");
+        }
       }else if (option == 'option2'){
-        player.location = "nostory";
+        player.location = "firstSteps";
       }
     break;
-  
+    
+    case "firstSteps":        
+      if (option == 'option1'){
+        player.location = "bathroom"
+      }else if (option == 'option2'){
+        player.location = "hallway";
+      }
+    break;
 
     case "nostory":        
       if (option == 'option1'){

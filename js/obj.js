@@ -36,11 +36,6 @@ let rooms = {
       option1: "YES, LETS BEGIN!",
       option2: "NO THANKS"
     },
-    completed: false,
-    get completedStory() 
-    { return (
-      ""
-    )},
     completedOptions:{
       option1: "",
       option2: ""
@@ -57,8 +52,7 @@ let rooms = {
     options:{
       option1: "I'll Give it a go",
       option2: "Nah, no point really"
-    },
-    completed: false
+    }    
   },
   begin:{
     get story() 
@@ -68,26 +62,62 @@ let rooms = {
       ....\n \
       ..\n \
       .\n\n \
-      Morning, well so it seems. You open your eyes to a brightly lit room. The room looks vaguly familiar but it's hard to tell\
-      from the thumping pain pulsing from your head.\n\
-      You roll to your side and notice some pills on the nightstand, your stomache also lets you know that it's unhappy with whatever\
-      activites you undertook last night."
+      Morning, well so it seems, with your sleep patterns it could just as easily be early afternoon.\
+      You open your eyes to a brightly lit room, the room looks vaguely familiar but it's hard to tell\
+      from the pain pulsing from your head.\n\n\
+      You roll to your side and your stomache lets you know that it too, is unhappy with whatever\
+      activites you undertook last night.\n\n \
+      You notice some pills on the nightstand next to you."
     )},
     options:{
       option1: "Take Pills",
       option2: "Dont Take Pills"
-    },
-    completed: false,
-    get completedStory() 
+    }
+  },
+  firstSteps:{
+    get story() 
     { return (
-      "you've taken the pills!"
+      "You stand up off your bed and your vision flickers between a blur and satisfaction as your body sways\
+      backward and forward, as if this was your first time using your legs.\n\
+      Your stomache growls at you and you look up to see two doorways. \nOne leads to the ensuite bathroom and the other\
+      leads to the hallway. \n\
+      You can't determine if your stomache is screaming for food or if further attention is required.\n"
     )},
-    completedOptions:{
+    options:{
+      option1: "Go to the Bathroom",
+      option2: "Exit to the Hallway"
+    }
+  },
+  bathroom:{
+    get story() 
+    { return (
+      "You think about it for a while and decide that maybe a shower is all you need. You remember that the shower in your ensuite is\
+      not working so you will need to use the main bathroom at the end of the hallway. You are about to open the door to the hallway when\
+      you feel a familiar rumbling from within. The rumbling gets worse follwed by loud noises and you feel your insides burning.\
+      The burning makes it's way through your body and before it's too late, you dash across the room ripping your clothes off and slam shut\
+      the bathroom Door.\n \
+      You take your seat on your beloved throne, sweat pouring from your brow as the greatest explosion or all time errupts from within!!!!\n\n\
+      After what feels like an eternity, you reach for the paper to discover it gone, not one piece, just an empty roll.\n\
+      You search the room with your eyes realizing there are only two options. The sock on the bathroom floor or a mad dash down the hall to\
+      the bathroom with the only working shower."
+    )},
+    options:{
+      option1: "The sock",
+      option2: "Mad Dash"
+    }
+  },  
+  
+  hallway:{
+    get story() 
+    { return (
+      ""
+    )},
+    options:{
       option1: "",
       option2: ""
     }
-    
-  },
+  },    
+  
   nostory:{
     get story() 
     { return (

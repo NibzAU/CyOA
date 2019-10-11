@@ -7,14 +7,14 @@ let btnOK = document.getElementById("btnOK");
 let name = document.getElementById("name");
 let items = document.getElementById("items");
 
-
+/*--------------LOAD------------*/
 window.onload = function(){
    story.style.display = "none";
    inventory.style.display = "none";
    options.style.display = "none";
    player.location = "start";
 }
-
+/*--------INVENTORY-------------*/
 function updateInventory(){
   while( items.firstChild ){
     items.removeChild( items.firstChild );
@@ -33,10 +33,8 @@ function updateInventory(){
     }
   }
 }
-
 /*--------------------INTRO------------------------*/
 btnOK.addEventListener("click", function(e){
-  console.log (name.value);
   if ( name.value ==""){
     player.name = "Nameless One";
   }else{
@@ -52,17 +50,14 @@ btnOK.addEventListener("click", function(e){
   option2.innerText = rooms[player.location].options.option2;
   updateInventory()
 });
-
-
-
 /* ----------------------story------------*/
-
 option1.addEventListener("click", gameLoop);
 option2.addEventListener("click", gameLoop);
 
+/*-----------------GaME LOOP--------------*/
 function gameLoop(event){
   let option = event.target.id
-    updateGame(option);
+  updateGame(option);
   
   story.innerText = rooms[player.location].story;
   option1.innerText = rooms[player.location].options.option1;  
