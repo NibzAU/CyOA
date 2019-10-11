@@ -110,6 +110,35 @@ let rooms = {
   hallway:{
     get story() 
     { return (
+      "You take no time to determine that it is definitely just hunger causing the growling and you step out into the hall.\n\n\
+      The hallway is narrow and on the second floor of the building. To your right you can see another bedroom, a stairway opposite on \
+      the left and a bathroom at the end of the hall.\n\n\
+      Your stomache growls, alot louder than before and causes a slight burning feeling inside. You feel you may have been wrong and \
+      perhaps it was not just hunger causing your stomache to be upset afterall. Your thoughts are disrupted as at that moment \
+      you hear a noise.... a noise you have never heard before but heard only \
+      rumors.. the sound......\n .....of a women being pleasured.\n\n\
+      You want to investigate the noise but feel your stomache should not go unanswered.. what do you do?"
+    )},
+    options:{
+      option1: "Answer nature\'s call",
+      option2: "Investigate the sound"
+    }
+  },    
+
+  sock:{
+    get story() 
+    { return (
+      ""
+    )},
+    options:{
+      option1: "",
+      option2: ""
+    }
+  },    
+
+  dash:{
+    get story() 
+    { return (
       ""
     )},
     options:{

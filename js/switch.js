@@ -37,6 +37,14 @@ function updateGame(option){
       }
     break;
 
+    case "bathroom":        
+      if (option == 'option1'){
+        player.location = "sock"
+      }else if (option == 'option2'){
+        player.location = "dash";
+      }
+    break;
+
     case "nostory":        
       if (option == 'option1'){
         player.location = "start"
